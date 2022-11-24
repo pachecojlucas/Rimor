@@ -55,7 +55,7 @@ def app():
 
                 
         # titulo da aplicação)
-        image = Image.open('imagem4.png')
+        image = Image.open('Imagem4.png')
         st.image(image)
         #new_image = image.resize((, 238))
         #st.image(new_image)
