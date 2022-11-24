@@ -1,0 +1,121 @@
+/*#primeiro titulo falando do espaço*/
+
+div.css-zt5igj.e16nr0p32
+{
+    background-color: hidden;
+    color: #EBEBEB;
+
+}
+/* menu lateral
+
+#MainMenu{
+    visibility: hidden;
+}
+*/
+
+/*nomezinho acima da parada de uploud*/
+
+label.css-15tx938.effi0qh3
+{
+    color:#EBEBEB;
+
+}
+
+/*side buttom*/
+
+button.css-bdg44w.e1fqkh3o11
+{
+    color:#EBEBEB;
+
+}
+/*letrinhas do drag your arq here*/
+
+div.css-u8hs99.exg6vvm14
+{
+    background-color:hidden;
+    color:#EBEBEB;
+
+    
+}
+/*negocio q fica de backgroud do uplouder*/
+section.css-po3vlj.exg6vvm15
+{
+    background-color: #B7B1A9
+    ;
+    border-color:#0046AD;
+    
+}
+
+/* botão de download */
+
+button.css-1cpxqw2.edgvbvh9
+{
+    background-color:#B7B1A9
+    ;
+    color:#EBEBEB;
+    border-color:#EBEBEB
+}
+
+/*papos do limit*/
+small.css-1aehpvj.euu6i2w0
+{
+    color:#EBEBEB;
+    background-color:hidden;
+    font-family: "SuzanoDisplay-Regular"
+}
+
+/*iconezinho pra baixo*/
+svg.css-noeb3a.ex0cdmw0
+{
+    color:#EBEBEB;
+    font-family: "SuzanoDisplay-Regular"
+}
+/*letras dos grafico*/
+div.css-1offfwp.e16nr0p33{
+    color:#EBEBEB;
+    font-family: "SuzanoDisplay-Regular"
+}
+/*nome do arquivinho upado*/
+div.uploadedFileName.css-1uixxvy.exg6vvm6{
+    color:#EBEBEB;
+}
+
+/*cor do filtro*/
+div.css-1djdyxw.ek41t0m0{
+    
+    color:#EBEBEB
+}
+
+/*botões de cima*/
+button.css-9s5bis.edgvbvh3{
+   color:#EBEBEB;
+}
+/*aparencia extern do select box*/
+div[data-baseweb="select"] > div {
+    background-color: #B7B1A9;
+    color:#EBEBEB;
+    border-color:#B7B1A9
+}
+
+/*o dropdownzinho dos select box*/
+div[role="listbox"] li {
+    background-color: #B7B1A9;
+    color:#EBEBEB;
+}
+/*o dropdownzinho dos select box*/
+div[role="listbox"] li:hover {
+    background-color: #8F6F4D
+    ;
+    color:#EBEBEB;
+}
+/*negocinho q aponta pra baixo na selectbox*/
+svg[data-baseweb="icon"] {
+    color:#EBEBEB;
+}
+
+
+button.css-1qrvfrg.edgvbvh9{
+    background-color:#B7B1A9
+    ;
+    color:#EBEBEB;
+    border-color:#B7B1A9}
