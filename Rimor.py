@@ -150,10 +150,10 @@ def app():
                         material = st.selectbox('Selecione o material genético', (list(maior_0['fator1'].unique())))
                         maior_0 = maior_0[maior_0['fator1']== material]
                         mat_gen = mat_gen[mat_gen['fator1']== material]
-                        tamanho=None
+                        #tamanho=None
                 
                 else:
-                        tamanho=None
+                        #tamanho=None
 
                 #histograma mat gen
                 st.write("Histograma - Frequência do" , label, "dos indivíduos dentro de cada material genético")
@@ -173,7 +173,7 @@ def app():
 
                 Boxplot_Matgen = px.box(data_frame=maior_0, x="fator1", y=coluna, color="fator1", 
                                 hover_name='atributo',
-                                points='all', width=tamanho, height=None, labels={
+                                points='all', height=None, labels={
                 coluna: label,
                 'fator1': 'Material genético'                   
                 })
