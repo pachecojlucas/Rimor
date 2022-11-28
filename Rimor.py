@@ -153,7 +153,7 @@ def app():
                         tamanho=None
                 
                 else:
-                        tamanho=None
+                        tamanho=4000
 
                 #histograma mat gen
                 st.write("Histograma - Frequência do" , label, "dos indivíduos dentro de cada material genético")
@@ -203,7 +203,7 @@ def app():
                         label2 = 'DAP (cm)' 
                 st.write("Gráfico de barras" ,label2 ,"médio de cada material genético")
 
-                Barras_medias = px.bar(tabela_resumo, x='Material genético', y= tabela_resumo[media].round(2),  width=None,color ='Sobrevivência %',
+                Barras_medias = px.bar(tabela_resumo, x='Material genético', y= tabela_resumo[media].round(2),  width=4000,color ='Sobrevivência %',
                 text_auto=True,
                 labels={'y': label2})
                                 
