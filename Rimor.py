@@ -150,10 +150,10 @@ def app():
                         material = st.selectbox('Selecione o material genético', (list(maior_0['fator1'].unique())))
                         maior_0 = maior_0[maior_0['fator1']== material]
                         mat_gen = mat_gen[mat_gen['fator1']== material]
-                        #tamanho=None
+                        tamanho=None
                 
                 else:
-                        #tamanho=None
+                        tamanho=None
 
                 #histograma mat gen
                 st.write("Histograma - Frequência do" , label, "dos indivíduos dentro de cada material genético")
