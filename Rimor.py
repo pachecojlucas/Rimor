@@ -81,8 +81,8 @@ def app():
                 ### Sub tabela para fazer o coeficiente de variação 
                 cv = lambda x: np.std(x, ddof=1) / np.mean(x) * 100 
 
-                tabela_cv = df.groupby(['fator1'])['DAP', 'Altura', 'Volume'].apply(cv).round(1).reset_index()
-                tabela_cv.columns = ['Material genético', 'DAP (CV%)','Altura (CV%)', 'Volume (CV%)']
+                tabela_cv = df.groupby(['fator1', 'idade'])['DAP', 'Altura', 'Volume'].apply(cv).round(1).reset_index()
+                tabela_cv.columns = ['Material genético', 'Idade', 'DAP (CV%)','Altura (CV%)', 'Volume (CV%)']
                 ### Sub tabela para media 
                 tabela_resumo= df.groupby(['experimento','fator1'])['DAP','Altura','Volume'].mean().round(2).reset_index()
                 tabela_resumo.columns = ['Experimento', 'Material genético', 'DAP médio (cm)','Altura média (m)', 'Volume médio (m³)']
@@ -158,7 +158,8 @@ def app():
                 #histograma mat gen
                 st.write("Histograma - Frequência do" , label, "dos indivíduos dentro de cada material genético")
                 Histograma_Matgen = px.histogram(mat_gen, x=coluna, color='fator1', barmode='overlay',labels={
-                coluna: label
+                coluna: label,
+                'fator1' : "Material genético"
                 })
                 Histograma_Matgen.update_layout({
                         'plot_bgcolor': 'rgb(235, 235, 235)',
