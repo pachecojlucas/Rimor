@@ -123,7 +123,7 @@ def app():
 
                 
                 #criando tituto de primeiros gráficos
-                st.subheader("Gráficos - Atributos e Mat.gen")
+                st.subheader("Gráficos - Atributos e Material genético")
                 #criando um select box para escolha de variaveis
                 coluna = st.selectbox('Selecione entre as variaveis', ("Altura", "DAP", "Volume"))
                 #setando labels
@@ -148,7 +148,7 @@ def app():
                 st.plotly_chart(Histograma_Atributos, use_container_width=True)
 
                 #filtro de matgen
-                if st.checkbox('Aplicar filtro de Mat.genético'):
+                if st.checkbox('Aplicar filtro de Material genético'):
                         material = st.selectbox('Selecione o material genético', (list(maior_0['fator1'].unique())))
                         maior_0 = maior_0[maior_0['fator1']== material]
                         mat_gen = mat_gen[mat_gen['fator1']== material]
@@ -283,9 +283,9 @@ def app():
                         baixar = Boxplot_Matgen
                 elif add_selectbox == 'Barras medias':
                         baixar = Barras_medias
-                elif add_selectbox == 'Scatter por Atributos':
+                elif add_selectbox == 'Disperção por Atributos':
                         baixar = Scatter_Atributos
-                elif add_selectbox == 'Scatter por Material Genetico':
+                elif add_selectbox == 'Disperção por Material Genetico':
                         baixar = Scatter_Matgen
                 
                 #botão legal para baixar graficos
