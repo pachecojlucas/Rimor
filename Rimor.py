@@ -171,7 +171,7 @@ def app():
 
                 st.write("Box plot - " , label, "por material genético")
 
-                Boxplot_Matgen = px.box(data_frame=maior_0, x="fator1", y=coluna, color="fator1", 
+                Boxplot_Matgen = px.box(data_frame=maior_0, x="fator1", y=coluna, width=tamanho, color="fator1", 
                                 hover_name='atributo',
                                 points='all', height=None, labels={
                 coluna: label,
