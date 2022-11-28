@@ -76,9 +76,7 @@ def app():
                 arquivo[['atributo']] = arquivo[['atributo']].replace(np.nan,0)
                 arquivo['atributo'] = arquivo['atributo'].replace(0,"Sem atributo")
                 df = arquivo[arquivo['fuste'] ==1]
-                df.columns = ['experimento', 'data_plantio', 'data_medicao', 'idade', 'fator1',
-                'fator2', 'parcela', 'repeticao', 'bloco', 'tratamento', 'cova',
-                'fuste', 'DAP', 'Altura', 'h_copa', 'secao_ind', 'Volume', 'atributo']
+                df = df.rename(columns={"h_total": "Altura", "dap": "DAP", "vol_ind": "Volume"})
 
                 ### Sub tabela para fazer o coeficiente de variação 
                 cv = lambda x: np.std(x, ddof=1) / np.mean(x) * 100 
