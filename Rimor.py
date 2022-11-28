@@ -153,7 +153,7 @@ def app():
                         tamanho=None
                 
                 else:
-                        tamanho=4000
+                        tamanho=None
 
                 #histograma mat gen
                 st.write("Histograma - Frequência do" , label, "dos indivíduos dentro de cada material genético")
