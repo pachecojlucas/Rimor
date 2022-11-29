@@ -157,7 +157,7 @@ def app():
 
                 #histograma mat gen
                 st.write("Histograma - Frequência do" , label, "dos indivíduos")
-                Histograma_Matgen = px.histogram(mat_gen, x=coluna, color='atributo', barmode='overlay',labels={
+                Histograma_Matgen = px.histogram(mat_gen, x=coluna, color='atributo',hover_name='fator1', barmode='overlay',labels={
                 coluna: label,
                 'fator1' : "Material genético"
                 })
