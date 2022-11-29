@@ -137,7 +137,7 @@ def app():
                 #st.write("Histograma - Frequência do" , label, "dos indivíduos dentro de cada atributo")
                 #Histograma_Atributos = px.histogram(df, x=coluna, color='atributo',barmode='overlay',labels={
                 #coluna: label
-                })
+                #})
                 #Histograma_Atributos.update_layout({
                         #'plot_bgcolor': 'rgb(235, 235, 235)',
                 #'paper_bgcolor': 'rgba(0, 0, 0, 0)',
