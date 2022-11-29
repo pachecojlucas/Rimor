@@ -270,13 +270,11 @@ def app():
 
                 add_selectbox = st.sidebar.selectbox(
                 "Qual gráfico voce gostaria de baixar? (O gráfico será baixado no estado atual)",
-                ('Histograma por Atributos', 'Histograma por Material Genético', 'Boxplot por Material Genético','Barras medias'
+                ('Histograma por Material Genético', 'Boxplot por Material Genético','Barras medias'
                 ,'Disperção por Atributos','Disperção por Material Genético')
                 )
 
-                if add_selectbox == 'Histograma por Atributos':
-                        baixar = Histograma_Atributos
-                elif add_selectbox == 'Histograma por Material Genético':
+                if add_selectbox == 'Histograma por Material Genético':
                         baixar = Histograma_Matgen
                 elif add_selectbox == 'Boxplot por Material Genético':
                         baixar = Boxplot_Matgen
