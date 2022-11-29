@@ -135,15 +135,15 @@ def app():
                 
                 #grafico  histograma de atributo 
                 st.write("Histograma - Frequência do" , label, "dos indivíduos dentro de cada atributo")
-                Histograma_Atributos = px.histogram(df, x=coluna, color='atributo',barmode='overlay',labels={
-                coluna: label
+                #Histograma_Atributos = px.histogram(df, x=coluna, color='atributo',barmode='overlay',labels={
+                #coluna: label
                 })
-                Histograma_Atributos.update_layout({
+                #Histograma_Atributos.update_layout({
                         'plot_bgcolor': 'rgb(235, 235, 235)',
                 'paper_bgcolor': 'rgba(0, 0, 0, 0)',
                 'font_color': 'rgb(235, 235, 235)'
                 })
-                st.plotly_chart(Histograma_Atributos, use_container_width=True)
+                #st.plotly_chart(Histograma_Atributos, use_container_width=True)
 
                 #filtro de matgen
                 if st.checkbox('Aplicar filtro de Material genético'):
