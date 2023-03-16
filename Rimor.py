@@ -219,7 +219,7 @@ def app():
                 st.plotly_chart(Barras_medias)
 
                 #escrevendo subtitulo terceira leva grafica
-                st.subheader("Gráficos - disperção")
+                st.subheader("Gráficos - dispersão")
                 disp2 = st.selectbox('Selecione seu eixo x', ("Altura", "DAP", "Volume"))
                 disp= st.selectbox('Selecione seu eixo y', ("Altura", "DAP", "Volume"))
                 #setando labels
